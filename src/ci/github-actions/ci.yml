@@ -281,7 +281,7 @@ jobs:
     <<: *base-ci-job
     name: PR
     env:
-      <<: [*shared-ci-variables, *public-variables]
+      <<: [*shared-ci-variables, *prod-variables]
     if: github.event_name == 'pull_request'
     strategy:
       matrix:

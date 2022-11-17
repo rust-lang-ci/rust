@@ -38,7 +38,12 @@ jobs:
     env:
       CI_JOB_NAME: "${{ matrix.name }}"
       SCCACHE_BUCKET: rust-lang-ci-sccache2
+      DEPLOY_BUCKET: rust-lang-ci2
       TOOLSTATE_REPO: "https://github.com/rust-lang-nursery/rust-toolstate"
+      TOOLSTATE_ISSUES_API_URL: "https://api.github.com/repos/rust-lang/rust/issues"
+      TOOLSTATE_PUBLISH: 1
+      CACHES_AWS_ACCESS_KEY_ID: AKIA46X5W6CZI5DHEBFL
+      ARTIFACTS_AWS_ACCESS_KEY_ID: AKIA46X5W6CZN24CBO55
       CACHE_DOMAIN: ci-caches.rust-lang.org
     if: "github.event_name == 'pull_request'"
     strategy:
