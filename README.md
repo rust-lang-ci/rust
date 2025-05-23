@@ -1,3 +1,6 @@
+> [!NOTE]
+> This forked repository was historically used to run CI for the Rust compiler. Since May 2025, all CI has been migrated to the [rust-lang/rust](https://github.com/rust-lang/rust) repository, and this fork is thus no longer used for anything.
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rust-lang/www.rust-lang.org/master/static/images/rust-social-wide-dark.svg">
